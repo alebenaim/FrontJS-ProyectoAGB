@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <!-- Fuentes desde Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+ 
+     <!-- Kit Fontawesome-->
+     <script src="https://kit.fontawesome.com/b817739989.js" crossorigin="anonymous"></script>
+ 
+     <!-- Archivo de estilo externo-->
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Contacto</h1>
+    <br><br>
+     <!--Formulario de contacto-->
+     <form class=contacto action="https://formspree.io/f/xblgboja" method="POST">
+        <label id="titulo-form">Formulario de Contacto</label>
+        <br><br><br>
+
+        <label for="nombre">Nombre y Apellido: </label>
+        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido"  maxlength="45" minlength="5">
+
+        <br><br>
+    
+        <label for="email">Correo electrónico: </label>
+        <input type="email" name="email" id="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+    
+        <br><br>
+
+        <label for="msg">Mensaje: </label>
+        <textarea name="msg" id="msg" rows="4" cols="50" required placeholder="Ingrese su mensaje aqui"></textarea>
+
+        <br><br>
+   
+        <button type="submit">Enviar</button>
+
+     </form>
+    <br> <br>
+    <a href="../index.html">Volver</a>
+    
+</body>
+</html>
