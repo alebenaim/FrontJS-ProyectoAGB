@@ -39,7 +39,7 @@ body {
     .encabezado {
         background-color: var(--backgroundHeader);
         padding: 15px;
-        width: 100%;
+        /*width: 100%;*/
         text-align: center;
         border-top: 5px solid var(--colorTextHeader);
         border-bottom: 5px solid var(--colorTextHeader);

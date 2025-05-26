@@ -1,3 +1,5 @@
+Repositorio para la carga del proyecto de la cursada Front End - JScript - Comision 25016 - Talento Tech
+
 @Autor: Alejandra Benaim
 @Fecha creación 20250525
 @Proyecto: Talento Tech - Almenachos
