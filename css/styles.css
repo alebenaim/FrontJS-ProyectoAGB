@@ -207,8 +207,7 @@ main {
 
      .galeria_fotos {
         display: grid;
-        width:1200px;
-        margin-left:8rem;
+        
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         align-items: start;
@@ -510,7 +509,7 @@ main {
     }
 
 
-    @media (max-width: 640px) {
+    @media (max-width: 600px) {
       
         .contacto {
 
