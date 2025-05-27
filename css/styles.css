@@ -92,7 +92,7 @@ body {
         border: 1px solid var(--backgroundHeader);
     }
     
-    @media (max-width: 640px) {
+    @media (max-width: 600px) {
         .navegacion{
             font-size:0.5rem;
            
