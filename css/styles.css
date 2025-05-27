@@ -70,7 +70,7 @@ body {
 
         a {
             text-decoration: none;
-             background-color: var(--backgroundHeader);
+            background-color: var(--backgroundHeader);
             color: var(--colorTextHeader);
             border: 1px solid var(--colorTextHeader);
             border-radius: 2rem;
@@ -78,7 +78,7 @@ body {
             padding: 0.5rem 1rem;
             margin: 0 1rem;
             text-align: center;
-            
+            font-size:1.1rem;
 
         }
 
@@ -87,11 +87,17 @@ body {
     a:hover {
         background-color: var(--colorTextHeader);
         color: #75946d;
+        border: 1px solid var(--backgroundHeader);
     }
-}
+    
+    @media (max-width: 640px) {
+        .navegacion{
+            font-size:0.5rem;
+           
+        }
+    }
 
-
-
+   
 main {
    /* margin-top: 5rem;*/
     background-image: url("../img/DA1-1.jpg");
@@ -164,7 +170,7 @@ main {
 
     .galeria {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         align-items: start;
         justify-items: center;
@@ -241,10 +247,10 @@ main {
 
 
         .card {
-            width: 300px;
-            height: 480px;
-            border: 1px solid var(--colortextDark);
-            border-style: double;
+            width: 280px;
+            height: 450px;
+            border: 2px solid var(--colortextDark);
+            border-style: outset;
             background-color: var(--colorbackgroudCard);
             border-radius: 0.5rem;
             padding: 1rem;
@@ -258,7 +264,7 @@ main {
                 width: 200px;
                 /*100%;*/
                 height: 180px;
-                margin-bottom: 1rem;
+                margin: 1rem 0;
                 border: 2px solid var(--colortextDark);
                 border-radius: 0.5rem;
                 border-style: outset;
@@ -270,14 +276,14 @@ main {
                 color: var(--colortextDark);
 
                 p {
-                    padding: 12px;
+                    padding: 1rem;
                     text-align: left;
                 }
             }
 
             .comprar {
                 background-color: var(--backgroundBody);
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: var(--colorTextSection);
                 padding: 0.5rem;
                 border: 2px solid var(--colorTextSection);
@@ -471,6 +477,7 @@ main {
 
 
     @media (max-width: 640px) {
+      
         .contacto {
 
 
@@ -519,4 +526,6 @@ footer {
     }
 
 
+}
+ 
 }
