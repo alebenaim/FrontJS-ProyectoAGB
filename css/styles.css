@@ -25,16 +25,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 
-    /*encabezado*/
-    .encabezado {
-        background-color: var(--backgroundHeader);
-        color: var(--colorTextHeader);
-        width: 100%;
-        text-align: center;
-        height: 9rem;
-       
-
-        .logo {
+      .logo {
                 width: 3rem;
                 height: 3rem;
                 border-radius: 50%;
@@ -45,6 +36,17 @@ body {
             .logo:hover {
                 transform: scale(1.2);
             }
+
+    /*encabezado*/
+    .encabezado {
+        background-color: var(--backgroundHeader);
+        color: var(--colorTextHeader);
+        width: 100%;
+        text-align: center;
+        height: 9rem;
+       
+
+      
 
         h1 {
                 font-size: 2.5rem;
@@ -105,22 +107,28 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
-    text-align: center;
+ 
+    
     border-bottom: 5px solid var(--colorTextHeader);
 
 
     .bien-t {
-        font-size: 2rem;
-        font-weight: 500;
-        padding: 3rem;
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 2rem;
         color: var(--colortextDark);
+        font-style:oblique;
+        text-align: right;
+        text-shadow: 3px 3px 3px var(--colorTextHeader);
+
     }
 
     .bienvenidos {
         font-size: 1.5rem;
         font-weight: 500;
         padding: 2rem;
-        color: var(--colortextDark);
+        color: var(--colorTextHeader);
+        text-align: center;
 
     }
 
@@ -157,44 +165,67 @@ main {
     h2 {
         color: var(--colorTextSection);
         margin: 1rem 0 3rem;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 500;
+        font-style:oblique;
+        text-shadow: 3px 3px 3px var(--colorTextHeader);
     }
 
-    .tit {
-        color: var(--colorTextSection);
-        margin: 1rem 1rem 3rem;
-        font-size: 1.4rem;
-        font-weight: 500;
-    }
+   
 
-    .galeria {
+    .galeria_top {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
-        align-items: start;
+        align-items: center;
         justify-items: center;
         background-color: var(--colorbackgroudCard);
+        align-items: center;
         padding: 1rem;
         margin: 2rem;
         position: relative;
 
-        img {
-            border: 1px solid rgba(20, 92, 47, 0.3);
-            box-shadow: 2px 2px 6px 0px rgba(20, 92, 47, 0.3);
-            max-width: 100%;
-
-        }
+       
+       
 
         video {
-            grid-column: span 3;
-            grid-row: span 2;
+            grid-column: span 2;
+            grid-row: span 4;
             border: 1px solid rgba(20, 92, 47, 0.3);
             box-shadow: 2px 2px 6px 0px rgba(20, 92, 47, 0.3);
             max-width: 100%;
+
         }
     }
+     .tit {
+            color: var(--colortextDark);
+            margin: 1rem 1rem 3rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding:1rem 0;
+    }
 
+     .galeria_fotos {
+        display: grid;
+        width:1200px;
+        margin-left:8rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        align-items: start;
+        justify-items: center;
+        background-color: var(--colorbackgroudCard);
+        padding: 1rem;
+        position: relative;
+        align-items: center;
+        .tit {grid-column: span 2;}
+
+         img {
+            border: 1px solid rgba(20, 92, 47, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(20, 92, 47, 0.3);
+            width:100%;
+
+        }
+    }
 
 
     .aa {
@@ -230,11 +261,12 @@ main {
     position: relative;
 
     #prod {
-        color: var(--colorTextSection);
-        margin-bottom: 3rem;
-        font-size: 2rem;
+         color: var(--colorTextSection);
+        margin: 1rem 0 3rem;
+        font-size: 3rem;
         font-weight: 500;
-        text-align: center;
+        font-style:oblique;
+        text-shadow: 3px 3px 3px var(--colorTextHeader);
     }
 
     .productos {
@@ -333,10 +365,12 @@ main {
     position: relative;
 
     h2 {
-        color: var(--colorTextSection);
+         color: var(--colorTextSection);
         margin: 1rem 0 3rem;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 500;
+        font-style:oblique;
+        text-shadow: 3px 3px 3px var(--colorTextHeader);
     }
 
     .contacto {
