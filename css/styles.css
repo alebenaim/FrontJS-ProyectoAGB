@@ -92,7 +92,7 @@ body {
         border: 1px solid var(--backgroundHeader);
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         .navegacion{
             font-size:0.5rem;
            
@@ -106,7 +106,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
  
     
     border-bottom: 5px solid var(--colorTextHeader);
@@ -513,7 +513,7 @@ main {
     }
 
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       
         .contacto {
 
