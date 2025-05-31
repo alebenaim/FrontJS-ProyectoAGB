@@ -64,46 +64,60 @@
 
     <!-- Seccion Sobre Nosotros-->
     <section id="nosotros">
-        <h2>Quienes Somos</h2>
+        <div class="somos">
+            <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+            <h2>Quienes Somos</h2>
+
+        </div>
         <div class="galeria_top">
             <video controls>
                 <source src="./img/video.mp4" type="video/mp4">
                 <track src="./img/subtitulos.vtt" kind="subtitles">
                 Su navegador no soporta reproducir videos
             </video>
-            <h3 class="tit">Somos emprendedores argentinos que creemos en las capacidades de nuestro país y su gente
-                para
+            <h3 class="tit">Somos emprendedores argentinos que creemos en las capacidades
+                de nuestro país y su gente para
                 producir bienes y servicios de calidad.
-                Invertimos y trabajamos para ofrecer excelentes almendras y pistachos de origen nacional.</h3>
-            <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
-            <h1>Almenachos</h1>
-                <h3 class="tit">Nuestra misión es producir en Argentina y ofrecer
+                Invertimos y trabajamos para ofrecer excelentes almendras y
+                pistachos de origen nacional.</h3>
+            <div class="almen">
+                <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+                <h3>Almenachos</h3>
+            </div>
+            <h3 class="titx">Nuestra misión es producir en Argentina y ofrecer
                 a nuestros consumidores y al mundo, alimentos saludables y naturales
                 con los mejores estándares de calidad internacional</h3>
         </div>
 
+
+
         <div class="galeria_fotos">
-            <h3 class="tit">Las plantas de Almendras y Pistachos florecen y se cargan de frutos gracias al cuidado riguroso
-                 y riego por goteo, tomando agua del reservorio construido y dedicado a la finca y distribuyendola por toda su extensión</h3>
-            <!--<img src="./img/CotTit.jpg" alt="foto">-->
+            <img src="./img/DA15-1.jpg" alt="foto">
+            <h3 class="tit">Las plantas de Almendras y Pistachos florecen y se cargan de frutos gracias al cuidado
+                riguroso
+                y riego por goteo, tomando agua del reservorio construido y dedicado a la finca y distribuyendola por
+                toda su extensión</h3>
+
             <img src="./img/DATit.jpg" alt="foto">
             <img src="./img/InfComTit.jpg" alt="foto">
-            <!--<img src="./img/P4.jpg" alt="foto">-->
-            <img src="./img/P10.jpg" alt="foto">
-            <!--<img src="./img/BondTit.jpg" alt="foto">-->
             <img src="./img/DP7.jpg" alt="foto">
-            <!--<img src="./img/DP4.jpg" alt="foto">-->
+            <img src="./img/P10.jpg" alt="foto">
+
+
+
 
         </div>
-        <div class="aa">
+        <!-- <div class="aa">
             <a class="volver" href="#inicio"><i class="fa-solid fa-arrow-up"></i> Inicio</a>
-        </div>
+        </div>-->
     </section>
 
     <!-- Mostramos los productos-->
     <section id="compras">
-
-        <h2 id="prod">Nuestros productos</h2>
+        <div class="flex-prod">
+            <h2 id="prod">Nuestros productos</h2>
+            <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+        </div>
         <div class="productos">
             <div class="card">
                 <a href="./pages/productos.html">
@@ -168,9 +182,11 @@
                 <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
             </div>
         </div>
+        <!-- 
         <div class="aa">
             <a class="volver" href="#inicio"><i class="fa-solid fa-arrow-up"></i> Inicio</a>
         </div>
+        -->
     </section>
 
 
@@ -179,7 +195,8 @@
         <h2>Contáctenos</h2>
         <div class="contacto">
             <div class="datos">
-                 <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+                <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+                <h3>Almenachos</h3>
                 <ul>
                     <li>
                         <h3>Almenachos - San Juan - Argentina</h3>
@@ -189,12 +206,7 @@
                             <h4> <i class="far fa-envelope"></i> info@almenachos.com.ar</h4>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/sXF2bNT7LZZxunmG9" target="_blank">
-                            <h4> <i class="fa-solid fa-location-dot"></i> Pocito (Almendras) / Rawson (Pistachos) - San
-                                Juan</h4>
-                        </a>
-                    </li>
+
                     <li>
                         <a href="https://www.whatsapp.com" target="_blank">
                             <h4> <i class="fa-brands fa-whatsapp"></i> +54 11 2345 3487</h4>
@@ -204,6 +216,15 @@
                         <a href="https://www.facebook.com" target="_blank">
                             <h4> <i class="fa-brands fa-facebook"></i> Almenachos</h4>
                         </a>
+                    </li>
+                    <li>
+                        <h4 class="mapa"> <i class="fa-solid fa-location-dot"></i> Pocito (Almendras) / Rawson
+                            (Pistachos) - San
+                            Juan</h4>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54408.15465782052!2d-68.52594139839947!3d-31.53762457906617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1748649668037!5m2!1ses!2sar"
+                            width="390" height="260" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </li>
                 </ul>
             </div>
@@ -231,7 +252,8 @@
                     </div>
                     <div class="mensaje">
                         <label for="msg">Mensaje: </label>
-                        <textarea name="msg" id="msg" required placeholder="Ingrese su mensaje aqui"></textarea>
+                        <textarea name="msg" id="msg" rows="4" cols="50" required
+                            placeholder="Ingrese su mensaje aqui"></textarea>
                     </div>
                     <div class="boton">
                         <button type="submit">Enviar</button>
@@ -240,9 +262,10 @@
 
             </div>
         </div>
-        <div class="aa">
+        <!--      <div class="aa">
             <a class="volver" href="#inicio"><i class="fa-solid fa-arrow-up"></i> Inicio</a>
         </div>
+        -->
     </section>
 
     <footer>
