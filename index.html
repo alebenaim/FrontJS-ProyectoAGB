@@ -29,29 +29,90 @@
 </head>
 
 <body>
-    <header id="inicio">
-        <div class="encabezado">
+    <header>
+        <section id="inicio">
+            <div id="logo-enca">
+                <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+            </div>
+            <div class="encabezado">
+                <h1>Almenachos</h1>
+            </div>
 
-            <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
-            <h1>Almenachos</h1>
+            <div class="container-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
 
-        </div>
-        <nav class="navegacion">
-            <a href="#">Inicio</a>
-            <a href="#nosotros">Quienes Somos</a>
-            <a href="#compras">Compras</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+            <nav class="navegacion" id="miNavegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Quienes Somos</a>
+                <a href="#compras">Productos</a>
+                <a href="#propiedades">Propiedades Nutricionales</a>
+                <a href="#contacto">Contacto</a>
+                <a href="javascript:void(0);" class="menuHambu" onclick="funcionMenu()">
+                    <i class="fa fa-bars"></i></a>
+            </nav>
 
-
+        </section>
     </header>
 
+    <!-- carrito  con productos-->
+    <div class="container-icon">
+        <div class="container-cart-products hidden-cart">
+            <div class="flex-carrito">
+                <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+                <h2 class="shop">Carrito de Compras</h2>
+
+                <p class="titulo-t">Producto</p>
+                <span class="cantidad-t">Kg</span>
+                <span class="precio-t">$/Kg</span>
+                <span class="total-t">Total</span>
+                <span class="tacho"></span>
+
+            </div>
+
+            <div class="row-product hidden">
+                <div class="cart-product">
+
+                    <div class="info-cart-product">
+                        <p class="titulo-producto-carrito"></p>
+                        <span class="cantidad-producto-carrito"></span>
+                        <span class="precio-producto-carrito"></span>
+                        <span class="precio-total-producto-carrito"></span>
+                    </div>
+                    <i class="fa-solid fa-trash icon-close"></i>
+                    <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                    <span class="minus"><i class="fa-solid fa-minus"></i></span>
+
+                </div>
+            </div>
+
+            <div class="cart-total hidden">
+                <h3>Total Kg:</h3>
+                <span class="total-kg">0</span>
+                <h3>Total a pagar:</h3>
+                <span class="total-pagar">$0</span>
+
+            </div>
+            <div class="pie-carrito">
+                <p class="cart-empty">El carrito está vacío</p>
+
+                <button class="cerrar-carrito">Cerrar</button>
+
+
+            </div>
+
+
+        </div>
+    </div>
     <main>
         <h2 class="bien-t">Productores de Almendras y Pistachos</h2>
         <h2 class="bien-t">San Juan, Argentina</h2>
         <h2 class="bienvenidos">Bienvenidos a nuestro emprendimiento</h2>
 
-        <!--Formulario para busqueda-->
+        <!--Formulario para busqueda
         <div class="busca">
             <form action="#">
 
@@ -60,6 +121,9 @@
                 <button id="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
+        -->
+
+
     </main>
 
     <!-- Seccion Sobre Nosotros-->
@@ -107,9 +171,7 @@
 
 
         </div>
-        <!-- <div class="aa">
-            <a class="volver" href="#inicio"><i class="fa-solid fa-arrow-up"></i> Inicio</a>
-        </div>-->
+
     </section>
 
     <!-- Mostramos los productos-->
@@ -120,75 +182,113 @@
         </div>
         <div class="productos">
             <div class="card">
-                <a href="./pages/productos.html">
+                <div class="info-product">
                     <h3>Almendra Guara</h3>
                     <img src="./img/Guara.jpg" alt="Almendra Guara">
                     <p><strong>Características:</strong> De forma chata y con tendencia lanceolada, sabor definido y
                         sabroso</p>
-                    <p><strong>Precio por Kg:</strong> $1.000</p>
-                </a>
-                <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
+                    <p class="price"><strong>Precio por Kg:</strong> $1000</p>
+
+                    <button class="comprar">Comprar</button>
+
+                </div>
             </div>
 
             <div class="card">
-                <a href="./pages/productos.html">
+                <div class="info-product">
                     <h3>Almendra Non Pareil</h3>
                     <img src="./img/Non Pareil.jpg" alt="Almendra Non Pareil">
                     <p><strong>Características: </strong>De forma elíptica y muy proporcionada, sabor dulce y suave</p>
-                    <p><strong>Precio por Kg:</strong> $1.025</p>
-                </a>
-                <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
+                    <p class="price"><strong>Precio por Kg:</strong> $1025</p>
 
+                    <button class="comprar">Comprar</button>
+
+                </div>
+            </div>
             <div class="card">
-                <a href="./pages/productos.html">
+                <div class="info-product">
                     <h3>Almendra Marinada</h3>
                     <img src="./img/Marinada.jpg" alt="Almendra Marinada">
                     <p><strong>Características: </strong>De forma redondeada y algo irregular, sabor suave y agradable
                     </p>
-                    <p><strong>Precio por Kg:</strong> $1.100</p>
-                </a>
-                <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
+                    <p class="price"><strong>Precio por Kg:</strong> $1100</p>
 
+                    <button class="comprar">Comprar</button>
+
+                </div>
+            </div>
             <div class="card">
-                <a href="./pages/productos.html">
+                <div class="info-product">
                     <h3>Almendra Sonora</h3>
                     <img src="./img/Sonora.jpg" alt="Almendra Sonora">
                     <p><strong>Características: </strong>De forma elíptica y muy proporcionada, sabor suave y agradable
                     </p>
-                    <p><strong>Precio por Kg:</strong> $1.080</p>
-                </a>
-                <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
+                    <p class="price"><strong>Precio por Kg:</strong> $1080</p>
 
+                    <button class="comprar">Comprar</button>
+
+                </div>
+            </div>
             <div class="card">
-                <a href="./pages/productos.html">
+                <div class="info-product">
                     <h3>Almendra Vairo</h3>
                     <img src="./img/Vairo.jpg" alt="Almendra Vairo">
                     <p><strong>Características: </strong>De forma cordiforme, sabor suave y muy agradable</p>
-                    <p><strong>Precio por Kg:</strong> $989</p>
-                </a>
-                <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
-            </div>
+                    <p class="price"><strong>Precio por Kg:</strong> $989</p>
 
+                    <button class="comprar">Comprar</button>
+
+                </div>
+            </div>
             <div class="card">
-                <a href="./pages/productos.html">
+                <div class="info-product">
                     <h3>Pistacho</h3>
                     <img src="./img/Pistacho.jpg" alt="Pistacho">
                     <p><strong>Características:</strong> Con cáscara, tostado y salado, ideal para snack</p>
-                    <p><strong>Precio por Kg:</strong> $4.300</p>
-                </a>
-                <button class="comprar"><i class="fa-solid fa-cart-plus"></i></button>
+                    <p class="price"><strong>Precio por Kg:</strong> $4300</p>
+
+                    <button class="comprar">Comprar</button>
+
+                </div>
             </div>
         </div>
-        <!-- 
-        <div class="aa">
-            <a class="volver" href="#inicio"><i class="fa-solid fa-arrow-up"></i> Inicio</a>
-        </div>
-        -->
-    </section>
+        <button class="ir-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
 
+
+        </div>
+        </div>
+        </div>
+
+    </section>
+    <!--Propiedades Nutricionales-->
+    <section id="propiedades">
+        <div class="flex-prod">
+            <h2 id="prod">Propiedades Nutricionales</h2>
+            <img class="logo" src="./img/Logo.jpg" alt="Logo de Amenachos">
+        </div>
+        <div class="cont-prop">
+            <div class="p-datos">
+                <h3 class="tit-prod">Almendras</h3>
+
+                <img src="./img/nutricion_salud.png" alt="Propiedades nutricionales de la almendra">
+
+
+            </div>
+            <div class="p-datos">
+
+                <h3 class="tit-prod">Pistachos</h3>
+
+                <img class="pist" src="./img/pistacho_propiedades_beneficios_y_contraindicaciones_4546_orig.jpg" "
+                        alt=" Propiedades nutricionales del pistacho">
+
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- Formulario de Contacto-->
     <section id="contacto">
@@ -262,15 +362,20 @@
 
             </div>
         </div>
-        <!--      <div class="aa">
-            <a class="volver" href="#inicio"><i class="fa-solid fa-arrow-up"></i> Inicio</a>
-        </div>
-        -->
+
+
     </section>
 
     <footer>
         <h3 id="reservado">&copy; 2025 Almenachos - Todos los derechos reservados - Talento Tech</h3>
     </footer>
+
+    <!--boton volver al inicio-->
+    <a href="#inicio"></a><i class="fa-solid fa-arrow-up back-to-top "></a>
+
+        <!-- Archivo javaScript-->
+        <script src="./js/script.js"></script>
+
 </body>
 
 </html>
